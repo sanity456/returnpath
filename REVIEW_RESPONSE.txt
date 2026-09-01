@@ -1,0 +1,14 @@
+Correction summary for ReturnCustodyRoute
+
+We applied the Boxcomplete result-binding finding and the Baggate registry-isolation finding across the full selected twelve-repository set, including this contract.
+
+What changed in this repository:
+Both nondeterministic decisions now pass through the same closed-domain canonicalizers in the validator and again after consensus, so an out-of-domain leader value cannot reach custody state.
+
+Release evidence:
+Current StudioNet address: 0xAB268c502a9D6162411Da2f0ee9C793438afdc90
+Deployment transaction: 0xb7aba0109295aa6afc3c1a2ec5349729ea9d47cf34426582acf2d67a22b9bdcd
+Source SHA-256: 3c69e49dc0aab0b83c58683ef1860b5ba29a6f35f1e812d79bb13061f4f8037e
+Superseded address: 0x3Ce0fA4B60782c7fE24073842673F156A3cc5E48
+
+The current Explorer deployment was read back after deployment and matched the repository source byte-for-byte. Its complete on-chain schema matched abi.json exactly. All recorded transactions finalized with successful execution, and the contract-specific final state was read back from StudioNet. Submission evidence must use only the current address and the commit-pinned deployment manifest; the superseded address is not active evidence.

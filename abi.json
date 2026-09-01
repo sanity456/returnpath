@@ -1,0 +1,235 @@
+{
+  "ctor": {
+    "params": [],
+    "kwparams": {}
+  },
+  "methods": {
+    "buyer_handoff": {
+      "params": [
+        [
+          "return_id",
+          "string"
+        ],
+        [
+          "handoff_reference",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "carrier_checkpoint": {
+      "params": [
+        [
+          "return_id",
+          "string"
+        ],
+        [
+          "accepted",
+          "bool"
+        ],
+        [
+          "carrier_note",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "classify_eligibility": {
+      "params": [
+        [
+          "return_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "get_policy": {
+      "params": [
+        [
+          "policy_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "get_return": {
+      "params": [
+        [
+          "return_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "get_return_count": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "int"
+    },
+    "matches_custody": {
+      "params": [
+        [
+          "return_id",
+          "string"
+        ],
+        [
+          "expected_state",
+          "string"
+        ],
+        [
+          "expected_change",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "bool"
+    },
+    "merchant_authorize": {
+      "params": [
+        [
+          "return_id",
+          "string"
+        ],
+        [
+          "approved",
+          "bool"
+        ],
+        [
+          "note",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "merchant_close": {
+      "params": [
+        [
+          "return_id",
+          "string"
+        ],
+        [
+          "resolution_code",
+          "string"
+        ],
+        [
+          "resolution_note",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "open_return": {
+      "params": [
+        [
+          "return_key",
+          "string"
+        ],
+        [
+          "policy_id",
+          "string"
+        ],
+        [
+          "carrier",
+          "address"
+        ],
+        [
+          "item_description",
+          "string"
+        ],
+        [
+          "purchase_minute",
+          "int"
+        ],
+        [
+          "request_minute",
+          "int"
+        ],
+        [
+          "initial_image",
+          "bytes"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "publish_policy": {
+      "params": [
+        [
+          "policy_key",
+          "string"
+        ],
+        [
+          "warehouse",
+          "address"
+        ],
+        [
+          "categories_json",
+          "string"
+        ],
+        [
+          "policy_text",
+          "string"
+        ],
+        [
+          "source_reference",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "warehouse_receive": {
+      "params": [
+        [
+          "return_id",
+          "string"
+        ],
+        [
+          "initial_image",
+          "bytes"
+        ],
+        [
+          "final_image",
+          "bytes"
+        ],
+        [
+          "receipt_note",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    }
+  }
+}

@@ -1,0 +1,241 @@
+{
+  "contract": {
+    "abi_sha256": "0e3a5fdf43a83655b513f03d24cc7018064a162f1ce798564bf37ef672284ba0",
+    "address": "0xAB268c502a9D6162411Da2f0ee9C793438afdc90",
+    "deployed_source_sha256": "3c69e49dc0aab0b83c58683ef1860b5ba29a6f35f1e812d79bb13061f4f8037e",
+    "deployment_tx": "0xb7aba0109295aa6afc3c1a2ec5349729ea9d47cf34426582acf2d67a22b9bdcd",
+    "execution_result": "SUCCESS",
+    "schema_method_count": 12,
+    "schema_readback_exact": true,
+    "source_readback_exact": true,
+    "source_sha256": "3c69e49dc0aab0b83c58683ef1860b5ba29a6f35f1e812d79bb13061f4f8037e",
+    "status": "FINALIZED"
+  },
+  "correction_basis": [
+    "leader substantive payload must be independently validated and bound to every derived hash, mask, or state field",
+    "registries and fixed capacity must be owner-scoped or safely reclaimable",
+    "submission evidence must resolve to this exact deployed source and full ABI"
+  ],
+  "network": {
+    "chain_id": 61999,
+    "explorer": "https://explorer-studio.genlayer.com",
+    "name": "studionet",
+    "rpc": "https://studio.genlayer.com/api"
+  },
+  "observed": {
+    "fixture_sha256": "a149fe06a80282e8d2374ad2e99e23484c7f2343b13efac5b875b05f25876179",
+    "return": {
+      "buyer": "0x3ac07d286fbFc25fb6B0Be36e1def2Ea6ff6631F",
+      "carrier": "0xb0F6c42898bdD90D16BEf534eEbED53AF4E75b2B",
+      "carrier_note": "Carrier accepts the synthetic public handoff record.",
+      "category_id": "HOUSEHOLD",
+      "closed_at": "2026-09-01T09:00:21.208823Z",
+      "condition_change": "SAME",
+      "final_image_sha256": "sha256:a149fe06a80282e8d2374ad2e99e23484c7f2343b13efac5b875b05f25876179",
+      "handoff_reference": "synthetic-carrier-handoff",
+      "initial_image_sha256": "sha256:a149fe06a80282e8d2374ad2e99e23484c7f2343b13efac5b875b05f25876179",
+      "item_description": "A small nonperishable household fabric storage bag from the listed program.",
+      "merchant": "0x5e7446a07D1EDaD4D0572D05D8679C0B06E4C5Bd",
+      "merchant_note": "Merchant authorizes this synthetic custody route.",
+      "opened_at": "2026-09-01T08:55:52.140944Z",
+      "policy_id": "0x5e7446a07d1edad4d0572d05d8679c0b06e4c5bd:STANDARD",
+      "policy_sha256": "sha256:3f3d5574174b7b8adcdf55cc59710f213c3f2d58f74d4d32e91fe06cd47f82a9",
+      "purchase_minute": 0,
+      "receipt_note": "Warehouse records receipt of the unchanged public fixture.",
+      "request_minute": 50,
+      "resolution_code": "COMPLETE",
+      "resolution_note": "Merchant closes this non-payment synthetic return record.",
+      "return_id": "0x3ac07d286fbfc25fb6b0be36e1def2ea6ff6631f:R1",
+      "schema": "returnpath/return/v2",
+      "state": "CLOSED",
+      "warehouse": "0xE8EB3A9a378b8731A4590447cE5381eD4D40aB79"
+    },
+    "strict_scalar_domains": true
+  },
+  "owner": "sanity456",
+  "repository": "returnpath",
+  "runner": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
+  "schema": "genlayer-intelligent-contract-correction/v4",
+  "supersedes": {
+    "address": "0x3Ce0fA4B60782c7fE24073842673F156A3cc5E48",
+    "reason": "Superseded by the full validator-binding and registry-isolation audit",
+    "source_sha256": "b64c187dcd3fb374c16c542e277f72b1daba7b9d654237b8414e74694071fb3b"
+  },
+  "transactions": {
+    "buyer_handoff": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0x4debe0b4e1a8e8170b471ba257a208af1bbe66ecdbc3e09069b14f21bdfdb68a",
+      "status": "FINALIZED",
+      "tx_hash": "0x4debe0b4e1a8e8170b471ba257a208af1bbe66ecdbc3e09069b14f21bdfdb68a",
+      "validator_votes": [
+        "AGREE",
+        "AGREE",
+        "IDLE",
+        "AGREE",
+        "IDLE"
+      ],
+      "verified": true
+    },
+    "carrier_checkpoint": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0x0245e9f58c3c953fc965c98806766ed8a73e9256b127e80ffaad9f6647b970ac",
+      "status": "FINALIZED",
+      "tx_hash": "0x0245e9f58c3c953fc965c98806766ed8a73e9256b127e80ffaad9f6647b970ac",
+      "validator_votes": [
+        "AGREE",
+        "AGREE",
+        "AGREE",
+        "AGREE",
+        "AGREE"
+      ],
+      "verified": true
+    },
+    "classify_eligibility": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0x6c4af15cdcff3cddc1346bac146321058629b705bb57b472cb5f3920af85a390",
+      "status": "FINALIZED",
+      "tx_hash": "0x6c4af15cdcff3cddc1346bac146321058629b705bb57b472cb5f3920af85a390",
+      "validator_votes": [
+        "AGREE",
+        "IDLE",
+        "AGREE",
+        "IDLE",
+        "AGREE"
+      ],
+      "verified": true
+    },
+    "deploy": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0xb7aba0109295aa6afc3c1a2ec5349729ea9d47cf34426582acf2d67a22b9bdcd",
+      "status": "FINALIZED",
+      "tx_hash": "0xb7aba0109295aa6afc3c1a2ec5349729ea9d47cf34426582acf2d67a22b9bdcd",
+      "validator_votes": [
+        "AGREE",
+        "AGREE",
+        "IDLE",
+        "AGREE",
+        "IDLE"
+      ],
+      "verified": true
+    },
+    "merchant_authorize": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0x6e498528a6cfc947a9d8c76af405343a450c0aa14c78756a26ea6d554bef2092",
+      "status": "FINALIZED",
+      "tx_hash": "0x6e498528a6cfc947a9d8c76af405343a450c0aa14c78756a26ea6d554bef2092",
+      "validator_votes": [
+        "AGREE",
+        "AGREE",
+        "IDLE",
+        "AGREE",
+        "IDLE"
+      ],
+      "verified": true
+    },
+    "merchant_close": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0x45d8c1efc4794f3acf9f4f529bcd326f61a4f08177391651d6092bccdf4ad2d4",
+      "status": "FINALIZED",
+      "tx_hash": "0x45d8c1efc4794f3acf9f4f529bcd326f61a4f08177391651d6092bccdf4ad2d4",
+      "validator_votes": [
+        "AGREE",
+        "AGREE",
+        "AGREE",
+        "AGREE",
+        "AGREE"
+      ],
+      "verified": true
+    },
+    "open_return": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0x15b1f9b966ced3552311ecb1bd2a6ed4959e638eb8e766158018da8f44d7b652",
+      "status": "FINALIZED",
+      "tx_hash": "0x15b1f9b966ced3552311ecb1bd2a6ed4959e638eb8e766158018da8f44d7b652",
+      "validator_votes": [
+        "AGREE",
+        "AGREE",
+        "AGREE",
+        "AGREE",
+        "AGREE"
+      ],
+      "verified": true
+    },
+    "publish_policy": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0xf11ad28f4438e8f9ba6521304f4c3240555538aa79e6a87c8eb06d6b6b88a5ff",
+      "status": "FINALIZED",
+      "tx_hash": "0xf11ad28f4438e8f9ba6521304f4c3240555538aa79e6a87c8eb06d6b6b88a5ff",
+      "validator_votes": [
+        "IDLE",
+        "AGREE",
+        "AGREE",
+        "IDLE",
+        "AGREE"
+      ],
+      "verified": true
+    },
+    "warehouse_receive": {
+      "consensus_result": "MAJORITY_AGREE",
+      "execution_succeeded": true,
+      "finalized": true,
+      "l1_tx_hash": "0xc95a10302c66303c886bdbff34a85ba25b6f251f93b489f25159b2ddae2e0269",
+      "status": "FINALIZED",
+      "tx_hash": "0xc95a10302c66303c886bdbff34a85ba25b6f251f93b489f25159b2ddae2e0269",
+      "validator_votes": [
+        "AGREE",
+        "IDLE",
+        "AGREE",
+        "IDLE",
+        "AGREE"
+      ],
+      "verified": true
+    }
+  },
+  "verification": {
+    "all_executions_succeeded": true,
+    "all_transactions_finalized": true,
+    "deployed_schema_exact": true,
+    "deployed_source_exact": true,
+    "latest_final_state_readback": true,
+    "leader_payload_injection_tests_passed": true,
+    "local_direct_test_count": 12,
+    "local_five_validator_test_count": 1,
+    "post_consensus_boundary_tests_passed": true,
+    "registry_isolation_tests_passed": false,
+    "synthetic_public_fixture": true
+  },
+  "verified_at": "2026-09-01T09:01:03.780498Z",
+  "wallet": {
+    "cross_repository_wallet_reused": false,
+    "external_encrypted_keystores": true,
+    "fresh_per_repository": true,
+    "other_owner_wallet_reused": false,
+    "owner": "sanity456",
+    "prior_address_overlap_count": 0,
+    "private_material_in_repository": false,
+    "repository": "returnpath",
+    "roles": {
+      "deployer": "0x5e7446a07D1EDaD4D0572D05D8679C0B06E4C5Bd",
+      "role_a": "0x3ac07d286fbFc25fb6B0Be36e1def2Ea6ff6631F",
+      "role_b": "0xb0F6c42898bdD90D16BEf534eEbED53AF4E75b2B",
+      "role_c": "0xE8EB3A9a378b8731A4590447cE5381eD4D40aB79"
+    },
+    "workspace_wallet_used": false
+  }
+}

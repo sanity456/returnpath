@@ -1,0 +1,43 @@
+2. ReturnCustodyRoute
+
+Contribution Date
+09/01/2026
+
+Title
+ReturnCustodyRoute - Four-Role Return Custody Workflow
+
+Notes / Description
+Built ReturnCustodyRoute, a reusable non-payment return route that maps items to policy windows, then enforces merchant authorization, buyer handoff, carrier acceptance, warehouse receipt, and consensus image comparison. Its distinct GenLayer-native mechanism is semantic category lookup + deterministic window -> ordered four-role custody -> two-image condition-change consensus. Correction applied: Both nondeterministic decisions now pass through the same closed-domain canonicalizers in the validator and again after consensus, so an out-of-domain leader value cannot reach custody state. The full selected set was checked against both steward findings: substantive leader payloads must bind every derived digest, mask, and state field, while operational registries must be owner-scoped or safely reclaimable. No web collection. Policies, categories, references, custody notes, and images are public caller-provided data and are not authenticated. It creates no return right, compels no merchant, moves no money, proves no custody fact, and assigns no liability. GenVM lint and strict typecheck pass; 12 direct tests and 1 five-validator GLSim integration test pass. A fresh repository-specific external wallet set was used, with no workspace, other-owner, or cross-repository wallet reuse. The StudioNet workflow finalized successfully in 9 transactions. The deployed source was read back byte-for-byte, the complete deployed schema matched abi.json exactly, and mechanism-specific terminal state was read back. The current release is commit 7b747ab7ccefd0d90b3cc5718542d6e09b65fb3d; contract source: https://github.com/sanity456/returnpath/blob/7b747ab7ccefd0d90b3cc5718542d6e09b65fb3d/contracts/return_custody_route.py. The earlier deployment is superseded, is identified only in the correction manifest, and is not submission evidence.
+
+Release commit
+7b747ab7ccefd0d90b3cc5718542d6e09b65fb3d
+
+Evidence 1 Type
+GitHub Repository
+
+Evidence 1 URL
+https://github.com/sanity456/returnpath
+
+Evidence 2 Type
+GitHub File
+
+Evidence 2 URL
+https://github.com/sanity456/returnpath/blob/7b747ab7ccefd0d90b3cc5718542d6e09b65fb3d/deployments/studionet.json
+
+Evidence 3 Type
+GenLayer Studio Contract
+
+Evidence 3 URL
+https://studio.genlayer.com/?import-contract=0xAB268c502a9D6162411Da2f0ee9C793438afdc90
+
+Evidence 4 Type
+GenLayer Explorer Contract
+
+Evidence 4 URL
+https://explorer-studio.genlayer.com/address/0xAB268c502a9D6162411Da2f0ee9C793438afdc90
+
+Evidence 5 Type
+Other
+
+Evidence 5 URL
+https://explorer-studio.genlayer.com/tx/0xb7aba0109295aa6afc3c1a2ec5349729ea9d47cf34426582acf2d67a22b9bdcd
